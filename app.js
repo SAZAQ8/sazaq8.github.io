@@ -1,22 +1,28 @@
-const PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
-    { en: "Toy Car", ar: "سيارة لعب", price: "10 KD", img: "images/product1.jpg" },
-    { en: "Doll", ar: "دمية", price: "15 KD", img: "images/product2.jpg" }
-];
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>عن المتجر - SAZAQ8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>عن SAZAQ8</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a> |
+            <a href="products.html">المنتجات</a> |
+            <a href="about.html">عن المتجر</a> |
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
 
-const WA_NUMBER = localStorage.getItem("wa_number") || "+96598833166";
+    <section>
+        <h2>رؤيتنا ورسالتنا</h2>
+        <p>SAZAQ8 يقدم أفضل منتجات الأطفال والأمهات، مع ضمان الجودة والأسعار المناسبة.</p>
+    </section>
 
-// هنا أكواد عرض المنتجات على الصفحة الرئيسية
-const productsContainer = document.getElementById("products");
-if(productsContainer){
-    PRODUCTS.forEach(p=>{
-        const div = document.createElement("div");
-        div.className = "product-card";
-        div.innerHTML = `
-            <img src="${p.img}" alt="${p.en}" style="width:150px;height:150px;"><br>
-            <strong>${p.ar} / ${p.en}</strong><br>
-            <span>${p.price}</span><br>
-            <a href="https://wa.me/${WA_NUMBER}" target="_blank">اطلب عبر واتساب</a>
-        `;
-        productsContainer.appendChild(div);
-    });
-}
+    <footer>
+        <p>جميع الحقوق محفوظة SAZAQ8</p>
+    </footer>
+</body>
+</html>
