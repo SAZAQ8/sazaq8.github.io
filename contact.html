@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2e0b1b6cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo">شعارك هنا</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن الشركة</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <a href="index.html" class="logo">متجري</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المتجر</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="https://wa.me/96598833166" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </header>
 
     <section class="contact">
-        <h1>تواصل معنا</h1>
-        <form>
-            <input type="text" placeholder="الاسم" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea placeholder="رسالتك" required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
+        <div class="container">
+            <h1>تواصل معنا</h1>
+            <form>
+                <input type="text" placeholder="الاسم" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+            <p>أو تواصل معنا عبر واتساب: <a href="https://wa.me/96598833166" target="_blank">0096598833166</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 موقعي. كل الحقوق محفوظة.</p>
+        <p>© 2025 متجري. جميع الحقوق محفوظة.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
