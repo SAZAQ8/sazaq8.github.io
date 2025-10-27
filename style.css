@@ -1,74 +1,126 @@
+/* === تصميم عام === */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #fff;
+    color: #333;
 }
 
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header nav a {
-    color: #ffffff;
-    margin: 0 10px;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 .hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .hero a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
     background-color: #000;
     color: #fff;
     text-decoration: none;
-    border-radius: 8px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
+/* === تصميم المنتجات === */
 .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 20px;
+    gap: 20px;
 }
 
 .product-card {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
     text-align: center;
-    width: 200px;
-    background: #fff;
-    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .product-card img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    background-color: #e68900;
+}
+
+/* === تصميم الصفحات الأخرى === */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
+    background-color: #222;
     color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
 }
 
-/* Responsive */
+/* === تجاوب الجوال === */
 @media screen and (max-width: 768px) {
     .products {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
     }
 }
