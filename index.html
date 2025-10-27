@@ -3,65 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجري</title>
+    <title>SAZAQ8 - متجر إلكتروني</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a2e0b1b6cf.js" crossorigin="anonymous"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <!-- ====== Header ====== -->
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo">متجري</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="about.html">عن المتجر</a></li>
-                    <li><a href="products.html">المنتجات</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <a href="https://wa.me/96598833166" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
+        <div class="logo">SAZAQ8</div>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">المنتجات</a></li>
+                <li><a href="#">عن المتجر</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <input type="text" placeholder="بحث..." id="search">
+            <button id="cart-btn">🛒</button>
         </div>
     </header>
 
-    <!-- ====== Hero Section ====== -->
-    <section class="hero">
-        <div class="container">
-            <h1>مرحباً بكم في متجرنا الحديث</h1>
-            <p>أفضل المنتجات بأعلى جودة وبسعر ممتاز</p>
-        </div>
-    </section>
+    <main>
+        <section class="products" id="products">
+            <!-- المنتجات ستظهر هنا -->
+        </section>
+    </main>
 
-    <!-- ====== Services Section ====== -->
-    <section class="services">
-        <div class="container">
-            <h2>خدماتنا</h2>
-            <div class="cards">
-                <div class="card">
-                    <i class="fas fa-shipping-fast fa-2x"></i>
-                    <h3>توصيل سريع</h3>
-                </div>
-                <div class="card">
-                    <i class="fas fa-gift fa-2x"></i>
-                    <h3>منتجات أصلية</h3>
-                </div>
-                <div class="card">
-                    <i class="fas fa-headset fa-2x"></i>
-                    <h3>دعم العملاء</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ====== Footer ====== -->
     <footer>
-        <p>© 2025 متجري. جميع الحقوق محفوظة.</p>
+        <p>&copy; 2025 SAZAQ8 جميع الحقوق محفوظة</p>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>
