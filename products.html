@@ -1,50 +1,74 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>SAZAQ8 — المنتجات</title>
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/app.js"></script>
-</head>
-<body class="rtl">
-<header class="site-header">
-  <div class="container">
-    <div class="logo">SAZAQ8</div>
-    <nav class="nav">
-      <a href="index.html" data-i18n="home">الرئيسية</a>
-      <a href="products.html" class="active" data-i18n="products">المنتجات</a>
-      <a href="about.html" data-i18n="about">من نحن</a>
-      <a href="contact.html" data-i18n="contact">اتصل بنا</a>
-    </nav>
-    <div class="controls">
-      <button id="langToggle">EN</button>
-      <a class="cartBtn" href="#cart" data-i18n="cart">السلة (<span id="cartCount">0</span>)</a>
-    </div>
-  </div>
-</header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
 
-<main class="container">
-  <section class="product-grid" id="productGrid"></section>
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
 
-  <section id="cart" class="cart-section">
-    <h2 data-i18n="your_cart">سلة الشراء</h2>
-    <div id="cartItems"></div>
-    <div class="cart-summary">
-      <div><span data-i18n="total">الإجمالي</span>: <strong id="cartTotal">0.00</strong> <span data-i18n="kd">KWD</span></div>
-      <div class="cart-actions">
-        <a id="whatsappCheckout" class="whatsapp-btn" href="#" target="_blank" data-i18n="order_whatsapp">اطلب عبر واتساب</a>
-        <button id="clearCart" data-i18n="clear_cart">تفريغ السلة</button>
-      </div>
-    </div>
-  </section>
-</main>
+header nav a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
-<footer class="site-footer">
-  <div class="container">
-    <div>© SAZAQ8</div>
-  </div>
-</footer>
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
 
-</body>
-</html>
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.product-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
