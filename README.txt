@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>SAZAQ8</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>SAZAQ8</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a> |
-            <a href="products.html">المنتجات</a> |
-            <a href="about.html">عن المتجر</a> |
-            <a href="contact.html">تواصل معنا</a>
-        </nav>
-    </header>
+==========================
+SAZAQ8 - موقع للأطفال والأمهات
 
-    <section class="hero">
-        <h2>أفضل منتجات الأطفال والأمهات</h2>
-        <a href="https://wa.me/+96598833166" target="_blank">اطلب عبر واتساب</a>
-    </section>
+ملفات الموقع:
+- index.html (الصفحة الرئيسية)
+- products.html (صفحة المنتجات)
+- about.html (عن المتجر)
+- contact.html (تواصل معنا)
+- admin.html (لوحة التحكم لتعديل المنتجات والواتساب)
+- css/style.css (تصميم الموقع)
+- js/app.js (عرض المنتجات في الموقع)
+- js/admin.js (لوحة التحكم)
 
-    <section class="products" id="products"></section>
+كيفية المعاينة على جهازك:
+1. فك الضغط عن الملفات.
+2. افتح أي صفحة HTML في متصفحك (مثلاً index.html).
 
-    <footer>
-        <p>جميع الحقوق محفوظة SAZAQ8</p>
-    </footer>
+كيفية النشر على GitHub Pages:
+1. أنشئ مستودع GitHub باسم username.github.io (استبدل username باسم المستخدم الخاص بك).
+2. ارفع جميع الملفات إلى المستودع (يمكنك السحب والإفلات في واجهة GitHub).
+3. افتح الرابط: https://username.github.io
 
-    <script src="js/app.js"></script>
-</body>
-</html>
+رقم WhatsApp:
+- يمكن تعديله عبر لوحة التحكم (admin.html)
+- الرقم الافتراضي: +96598833166
+- بعد تعديل الرقم، ستعمل جميع روابط "اطلب عبر واتساب" تلقائياً.
+
+تعديل المنتجات:
+1. افتح admin.html
+2. عدل أسماء المنتجات بالعربي والإنجليزي، السعر، أو رابط الصورة.
+3. اضغط "حفظ المنتجات" ليتم تحديث الموقع مباشرة.
+
+ملاحظات:
+- الموقع متجاوب على الجوال والكمبيوتر.
+- جميع الملفات مجانية وجاهزة للاستخدام.
+- لتحديث الصور، ضع الصور الجديدة في مجلد images وأدخل الرابط الصحيح في لوحة التحكم.
+
+==========================
