@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقعي</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>متجري</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2e0b1b6cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- ====== Header ====== -->
     <header>
-        <div class="logo">شعارك هنا</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن الشركة</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <a href="#" class="logo">متجري</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المتجر</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="https://wa.me/96598833166" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </header>
 
-    <section class="banner">
-        <h1>مرحبا بكم في موقعي</h1>
-        <p>ثيم مرتب وجاهز لجميع الصفحات</p>
+    <!-- ====== Hero Section ====== -->
+    <section class="hero">
+        <div class="container">
+            <h1>مرحباً بكم في متجرنا الحديث</h1>
+            <p>أفضل المنتجات بأعلى جودة وبسعر ممتاز</p>
+        </div>
     </section>
 
-    <section class="features">
-        <div class="feature-box">قالب خدمة 1</div>
-        <div class="feature-box">قالب خدمة 2</div>
-        <div class="feature-box">قالب خدمة 3</div>
+    <!-- ====== Services Section ====== -->
+    <section class="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-shipping-fast fa-2x"></i>
+                    <h3>توصيل سريع</h3>
+                </div>
+                <div class="card">
+                    <i class="fas fa-gift fa-2x"></i>
+                    <h3>منتجات أصلية</h3>
+                </div>
+                <div class="card">
+                    <i class="fas fa-headset fa-2x"></i>
+                    <h3>دعم العملاء</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="products-preview">
-        <h2>أحدث المنتجات</h2>
-        <div class="product-card">منتج 1</div>
-        <div class="product-card">منتج 2</div>
-        <div class="product-card">منتج 3</div>
-    </section>
-
+    <!-- ====== Footer ====== -->
     <footer>
-        <p>&copy; 2025 موقعي. كل الحقوق محفوظة.</p>
+        <p>© 2025 متجري. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
