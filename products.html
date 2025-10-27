@@ -2,26 +2,51 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنتجات - SAZAQ8</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>SAZAQ8 - المنتجات</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a> |
-            <a href="products.html">المنتجات</a> |
-            <a href="about.html">عن المتجر</a> |
-            <a href="contact.html">تواصل معنا</a>
-        </nav>
+        <div class="container">
+            <h2>SAZAQ8</h2>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="products.html">المنتجات</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="products" id="products"></section>
+    <div class="container" style="margin-top:30px;">
+        <h1>منتجاتنا</h1>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?product" alt="منتج 1">
+                <h3>منتج 1</h3>
+                <p>وصف قصير للمنتج.</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?item" alt="منتج 2">
+                <h3>منتج 2</h3>
+                <p>وصف قصير للمنتج.</p>
+                <button>شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?gadget" alt="منتج 3">
+                <h3>منتج 3</h3>
+                <p>وصف قصير للمنتج.</p>
+                <button>شراء الآن</button>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>جميع الحقوق محفوظة SAZAQ8</p>
+        &copy; 2025 SAZAQ8 | جميع الحقوق محفوظة
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
