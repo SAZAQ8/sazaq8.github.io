@@ -2,27 +2,37 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تواصل معنا - SAZAQ8</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>تواصل معنا</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a> |
-            <a href="products.html">المنتجات</a> |
-            <a href="about.html">عن المتجر</a> |
-            <a href="contact.html">تواصل معنا</a>
-        </nav>
+        <div class="container">
+            <h2>SAZAQ8</h2>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="products.html">المنتجات</a>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>اتصل بنا عبر واتساب</h2>
-        <a href="https://wa.me/+96598833166" target="_blank">+96598833166</a>
-    </section>
+    <div class="container" style="margin-top:30px;">
+        <h1>تواصل معنا</h1>
+        <form style="display:flex; flex-direction:column; gap:15px; max-width:500px;">
+            <input type="text" placeholder="الاسم" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+            <input type="email" placeholder="البريد الإلكتروني" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+            <textarea placeholder="رسالتك" rows="5" required style="padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
 
     <footer>
-        <p>جميع الحقوق محفوظة SAZAQ8</p>
+        &copy; 2025 SAZAQ8 | جميع الحقوق محفوظة
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
