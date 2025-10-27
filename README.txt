@@ -1,30 +1,33 @@
 README - SAZAQ8 static site
-==========================
-Files included:
-- index.html (Home)
-- products.html (Products + cart)
-- about.html
-- contact.html
-- css/style.css
-- js/app.js
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة التحكم - SAZAQ8</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f5f5f5; color: #000; }
+        h1 { text-align: center; }
+        .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; background: #fff; }
+        input, button { padding: 5px; margin: 5px 0; }
+        .save-btn { background: #000; color: #fff; border: none; cursor: pointer; padding: 8px 15px; border-radius:5px; }
+    </style>
+</head>
+<body>
+    <h1>لوحة التحكم - SAZAQ8</h1>
 
-How to preview locally:
-1. Unzip the archive.
-2. Open any .html file (e.g., index.html) in your browser.
+    <div>
+        <h2>رقم واتساب</h2>
+        <input type="text" id="wa_number" placeholder="+96598833166">
+        <button class="save-btn" onclick="saveWhatsApp()">حفظ</button>
+    </div>
 
-How to publish on GitHub Pages:
-1. Create a GitHub repository named username.github.io (replace username with your GitHub username).
-2. Upload all files to the repository (you can drag & drop on GitHub web UI).
-3. Visit https://username.github.io to see the site. Alternatively, enable GitHub Pages in repository settings from main branch.
+    <div>
+        <h2>المنتجات</h2>
+        <div id="products_container"></div>
+        <button class="save-btn" onclick="saveProducts()">حفظ المنتجات</button>
+    </div>
 
-Important: WhatsApp number
-- Current placeholder in js/app.js: WA_NUMBER = "+965XXXXXXXX"
-- Replace +965XXXXXXXX with your real WhatsApp number in international format (for example +96550123456).
-- After replacement, re-upload js/app.js or edit via GitHub UI so the 'Order via WhatsApp' links work.
-
-Customization:
-- To change products, edit the PRODUCTS array in js/app.js (name fields in 'en' and 'ar', price, and img).
-- To change theme colors, edit css/style.css variables.
-
-Need help publishing?
-- If you want, I can give step-by-step commands or screenshots to publish on GitHub Pages.
+    <script src="js/admin.js"></script>
+</body>
+</html>
