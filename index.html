@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAZAQ8 بوتيك</title>
+    <title>SAZAQ8 - الصفحة الرئيسية</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,22 +13,26 @@
             <ul>
                 <li><a href="index.html">الرئيسية</a></li>
                 <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن البوتيك</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-                <li><a href="cart.html">🛒 سلة</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
             </ul>
         </nav>
+        <div class="header-icons">
+            <input type="text" placeholder="ابحث..." id="search">
+            <button id="search-btn">🔍</button>
+            <button id="cart-btn">🛒</button>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1>مرحبًا بكم في بوتيك SAZAQ8</h1>
-            <p>أفضل تشكيلات المنتجات بأعلى جودة</p>
+            <h1>مرحباً بكم في SAZAQ8</h1>
+            <p>أفضل المنتجات وأكثرها جودة!</p>
         </section>
 
-        <section class="featured">
+        <section class="featured-products">
             <h2>منتجات مميزة</h2>
-            <div class="products" id="products">
+            <div class="products-grid" id="products-grid">
                 <!-- المنتجات ستظهر هنا -->
             </div>
         </section>
@@ -38,5 +41,7 @@
     <footer>
         <p>&copy; 2025 SAZAQ8 جميع الحقوق محفوظة</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
