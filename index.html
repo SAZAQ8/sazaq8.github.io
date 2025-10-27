@@ -3,36 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرئيسية - موقع سا زاق 8</title>
+    <title>متجري الإلكتروني - SAZAQ8</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2>SAZAQ8</h2>
+
+    <!-- Top Bar -->
+    <div class="top-bar container">
+        <div>مرحبًا بك في متجرنا الإلكتروني</div>
+        <div>USD | SAR | KWD</div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="logo">SAZAQ8</div>
             <nav>
                 <a href="index.html">الرئيسية</a>
-                <a href="about.html">من نحن</a>
                 <a href="products.html">المنتجات</a>
+                <a href="about.html">من نحن</a>
                 <a href="contact.html">تواصل معنا</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <h1>مرحبًا بكم في موقعنا!</h1>
-    </section>
+    <!-- Search Bar -->
+    <div class="container search-bar">
+        <input type="text" placeholder="ابحث عن منتج...">
+        <button>بحث</button>
+    </div>
 
+    <!-- Featured Products -->
     <div class="container">
-        <h2>أحدث الأخبار</h2>
-        <p>هذا قسم افتراضي لأحدث الأخبار والعروض الخاصة بالموقع.</p>
-        <button>تعرف أكثر</button>
+        <h2>أحدث المنتجات</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?tech,gadget" alt="منتج 1">
+                <h3>منتج 1</h3>
+                <p>وصف قصير للمنتج.</p>
+                <div class="price">$99.00</div>
+                <button>شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?tech,device" alt="منتج 2">
+                <h3>منتج 2</h3>
+                <p>وصف قصير للمنتج.</p>
+                <div class="price">$120.00</div>
+                <button>شراء الآن</button>
+            </div>
+            <div class="product-card">
+                <img src="https://source.unsplash.com/300x200/?tech,gadget2" alt="منتج 3">
+                <h3>منتج 3</h3>
+                <p>وصف قصير للمنتج.</p>
+                <div class="price">$75.00</div>
+                <button>شراء الآن</button>
+            </div>
+        </div>
     </div>
 
     <footer>
         &copy; 2025 SAZAQ8 | جميع الحقوق محفوظة
     </footer>
 
-    <script src="app.js"></script>
 </body>
 </html>
