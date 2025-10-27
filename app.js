@@ -1,26 +1,26 @@
 const products = [
-    { id: 1, name: "فستان نسائي", price: 30, img: "https://via.placeholder.com/200" },
-    { id: 2, name: "حذاء رياضي", price: 50, img: "https://via.placeholder.com/200" },
-    { id: 3, name: "شنطة يد", price: 40, img: "https://via.placeholder.com/200" },
-    { id: 4, name: "نظارة شمسية", price: 25, img: "https://via.placeholder.com/200" }
+    { id: 1, name: "منتج 1", price: "10 د.ك" },
+    { id: 2, name: "منتج 2", price: "15 د.ك" },
+    { id: 3, name: "منتج 3", price: "20 د.ك" }
 ];
 
-const productsContainer = document.getElementById("products");
+const productsGrid = document.querySelectorAll("#products-grid");
 
-function displayProducts(items) {
-    if (!productsContainer) return;
-    productsContainer.innerHTML = "";
-    items.forEach(product => {
+productsGrid.forEach(grid => {
+    products.forEach(product => {
         const div = document.createElement("div");
-        div.classList.add("product-card");
-        div.innerHTML = `
-            <img src="${product.img}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price} د.ك</p>
-            <a href="product-details.html">عرض المنتج</a>
-        `;
-        productsContainer.appendChild(div);
+        div.className = "product";
+        div.innerHTML = `<h3>${product.name}</h3><p>${product.price}</p><button>أضف إلى السلة</button>`;
+        grid.appendChild(div);
     });
-}
+});
 
-displayProducts(products);
+// أزرار السلة والبحث
+document.getElementById("search-btn")?.addEventListener("click", () => {
+    const query = document.getElementById("search").value;
+    alert("تم البحث عن: " + query);
+});
+
+document.getElementById("cart-btn")?.addEventListener("click", () => {
+    alert("سلة التسوق فارغة الآن");
+});
