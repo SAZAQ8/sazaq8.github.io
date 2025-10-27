@@ -1,74 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000000;
-}
+// جلب المنتجات من LocalStorage أو استخدام البيانات الافتراضية
+const PRODUCTS = JSON.parse(localStorage.getItem("products")) || [
+    { en: "Toy Car", ar: "سيارة لعب", price: "10 KD", img: "images/product1.jpg" },
+    { en: "Doll", ar: "دمية", price: "15 KD", img: "images/product2.jpg" },
+    { en: "Baby Shoes", ar: "حذاء أطفال", price: "8 KD", img: "images/product3.jpg" },
+    { en: "Stuffed Animal", ar: "حيوان محشو", price: "12 KD", img: "images/product4.jpg" },
+    { en: "Puzzle", ar: "باازل", price: "7 KD", img: "images/product5.jpg" },
+    { en: "Building Blocks", ar: "مكعبات بناء", price: "20 KD", img: "images/product6.jpg" },
+    { en: "Baby Bottle", ar: "رضاعة أطفال", price: "5 KD", img: "images/product7.jpg" },
+    { en: "Bib", ar: "مريول أطفال", price: "3 KD", img: "images/product8.jpg" },
+    { en: "Stroller Toy", ar: "لعبة عربة", price: "9 KD", img: "images/product9.jpg" },
+    { en: "Teether", ar: "عضاضة أطفال", price: "4 KD", img: "images/product10.jpg" }
+];
 
-header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px;
-    text-align: center;
-}
+const WA_NUMBER = localStorage.getItem("wa_number") || "+96598833166";
 
-header nav a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
-}
-
-.hero a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.product-card {
-    border: 1px solid #ccc;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-    background: #fff;
-    border-radius: 8px;
-}
-
-.product-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .products {
-        flex-direction: column;
-        align-items: center;
-    }
+// عرض المنتجات على الصفحة
+const productsContainer = document.getElementById("products");
+if(productsContainer){
+    PRODUCTS.forEach(p=>{
+        const div = document.createElement("div");
+        div.className = "product-card";
+        div.innerHTML = `
+            <img src="${p.img}" alt="${p.en}">
+            <strong>${p.ar} / ${p.en}</strong><br>
+            <span>${p.price}</span><br>
+            <a href="https://wa.me/${WA_NUMBER}" target="_blank">اطلب عبر واتساب</a>
+        `;
+        productsContainer.appendChild(div);
+    });
 }
