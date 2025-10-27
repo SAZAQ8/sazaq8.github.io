@@ -1,20 +1,9 @@
-/* ====== Reset ====== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    direction: rtl;
-}
-
 /* ====== Header ====== */
 header {
-    background-color: #fff;
+    background-color: #000; /* أسود */
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    color: #fff;
 }
 .header-container {
     width: 90%;
@@ -24,142 +13,87 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-nav ul {
+
+/* قائمة التنقل على اليسار */
+.nav-left ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-nav ul li a {
+.nav-left ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: 500;
-}
-.icons a {
-    margin-left: 15px;
-    color: #333;
-    font-size: 18px;
-}
-
-/* ====== Hero Section ====== */
-.hero {
-    background-color: #f5f5f5;
-    padding: 100px 0;
-    text-align: center;
-}
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-.hero p {
-    font-size: 18px;
-}
-
-/* ====== Services Section ====== */
-.services {
-    padding: 60px 0;
-    text-align: center;
-}
-.services h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-}
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-.card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    width: 250px;
     transition: 0.3s;
 }
-.card:hover {
-    transform: translateY(-10px);
-}
-.card i {
-    margin-bottom: 15px;
+.nav-left ul li a:hover {
     color: #4CAF50;
 }
-.card h3 {
-    margin-bottom: 10px;
+
+/* اسم المتجر في الوسط */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    flex: 1;
 }
 
-/* ====== Products ====== */
-.products {
-    padding: 60px 0;
-    text-align: center;
-}
-.product-grid {
+/* أيقونات البحث والسلة والواتساب */
+.header-icons {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.product-card {
-    background-color: #fff;
-    padding: 20px;
-    width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-.product-card:hover {
-    transform: translateY(-10px);
-}
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-.product-card h3 {
-    margin: 10px 0 5px 0;
-}
-
-/* ====== Contact ====== */
-.contact {
-    padding: 60px 0;
-    text-align: center;
-}
-.contact form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 15px;
 }
-.contact input, .contact textarea {
-    padding: 10px;
+
+/* خانة البحث */
+.search-box {
+    display: flex;
+    border: 1px solid #fff;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    overflow: hidden;
 }
-.contact button {
-    padding: 12px;
-    background-color: #4CAF50;
+.search-box input {
+    padding: 5px 10px;
     border: none;
+    outline: none;
+    background: #000;
     color: #fff;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
 }
-.contact button:hover {
-    background-color: #45a049;
+.search-box button {
+    padding: 5px 10px;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-box button:hover {
+    background: #45a049;
 }
 
-/* ====== Footer ====== */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+/* أيقونات FontAwesome */
+.header-icons a {
     color: #fff;
-    margin-top: 50px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.header-icons a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-left ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-icons {
+        justify-content: center;
+        gap: 10px;
+    }
 }
