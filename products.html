@@ -4,33 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنتجات</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2e0b1b6cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo">شعارك هنا</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن الشركة</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <a href="index.html" class="logo">متجري</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن المتجر</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="https://wa.me/96598833166" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </header>
 
-    <section class="products-list">
-        <h1>جميع المنتجات</h1>
-        <div class="product-card">قالب منتج 1</div>
-        <div class="product-card">قالب منتج 2</div>
-        <div class="product-card">قالب منتج 3</div>
-        <div class="product-card">قالب منتج 4</div>
+    <section class="products">
+        <div class="container">
+            <h1>منتجاتنا</h1>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="منتج 1">
+                    <h3>منتج 1</h3>
+                    <p>وصف قصير للمنتج 1</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="منتج 2">
+                    <h3>منتج 2</h3>
+                    <p>وصف قصير للمنتج 2</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="منتج 3">
+                    <h3>منتج 3</h3>
+                    <p>وصف قصير للمنتج 3</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 موقعي. كل الحقوق محفوظة.</p>
+        <p>© 2025 متجري. جميع الحقوق محفوظة.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
